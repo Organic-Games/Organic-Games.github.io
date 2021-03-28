@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Games, LLC. - freshly picked video games, created by Chase Peck">
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="icon" href="assets/logos/og_small_notext.png">
+    <link rel="apple-touch-icon" href="assets/logos/og_small_notext.png">
+    <title>Organic Games</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #05000c;
+            text-align: center;
+            font-family: "ocrbmedium";
+        }
+    </style>
+    <img id="mainlogo" src="assets/logos/og_light1.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
+    <div class="organic-mainmenu">
+        <div class="organic-tab">
+            <button class="tablinks" onclick="switchTab(event, 'Games')">Games</button>
+            <button class="tablinks" onclick="switchTab(event, 'Contact')">Contact</button>
+            <button class="tablinks" onclick="switchTab(event, 'About')">About</button>
+        </div>
+        <div class="tabcontent" id="Games" style="display: block !important;">
+            <div style="display: inline-block;">
+                <img src="games/dotdashdot/Thumbnail1.png" style="height: auto;width:30%;"><br>
+                <h1>Dot Dash Dot<br>...Coming soon!</h1>
+                <!--
+                <figure class="organic-gameicon left">
+                    <a href="/games/dotdashdot/">
+                        <img src="games/dotdashdot/Thumbnail1.png" style="height: auto;width:30%;vertical-align: top;float:left;">
+                    </a>
+                </figure>
+                -->
+            </div>
+        </div>
+        <div class="tabcontent" id="Contact">
+            <h1>Contact!</h1>
+            <h2><a href="mailto:info@organic.games">info@organic.games</a></h2>
+            <!--
+            <div class="organic-contact">
+                <form action="" method="post">
+                    <h4>Name:</h4><input type="text" name="name" placeholder="Name" required="" id="textinput"><br><br>
+                    <h4>Email:</h4><input type="email" name="email" placeholder="Email" required="" id="textinput"><br><br><br>
+                    <h4>Message:</h4>
+                    <textarea name="message" required="" id="textinput"> </textarea><br>
+                    <input type="submit" name="submit" value="Submit">
+                    <div class="clear"> </div>
+                </form>
+            </div>
+            -->
+        </div>
+        <div class="tabcontent" id="About">
+            It's me, <a href="https://chasepeck.com">Chase Peck</a>. I make games, if you couldn't tell.<br><br>
+            <a href="https://gamejolt.com/@OrganicGames">GameJolt</a><br>
+            <a href="https://github.com/Organic-Games">GitHub</a><br>
+            <a href="https://twitter.com/_OrganicGames">Twitter</a><br>
+            <a href="https://www.youtube.com/channel/UCoVLizPxup6wLRAafu86O5g">YouTube</a><br>
+            <a href="https://organicgames.bandcamp.com">Bandcamp</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://gamejolt.com/@OrganicGames">GameJolt</a> - <a href="https://github.com/Organic-Games">GitHub</a> - <a href="https://twitter.com/_OrganicGames">Twitter</a> - <a href="https://www.youtube.com/channel/UCoVLizPxup6wLRAafu86O5g">YouTube</a> - <a href="https://organicgames.bandcamp.com">Bandcamp</a><br><br>
+        2021 Organic Games, LLC.<br>
+    </footer>
+    <script>
+        function switchTab(evt, tab) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tab).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        tablinks[0].className = "tablinks active";
+
+    </script>
+</body>
+</html>

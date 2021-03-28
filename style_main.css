@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'ocrbmedium';
+    src: url('assets/fonts/ocrb_medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/ocrb_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media (max-width: 1000px) {  
+    .organic-mainmenu {
+        margin: 0px !important;
+    }                
+    .organic-gameicon img{
+        height: auto !important;
+        width: 250px !important;
+    }
+    .organic-gameicon {
+        margin: 0px !important;
+        text-align: center !important;
+        float: none !important;
+    }
+    #mainlogo {
+        transform: none !important;
+        width:70% !important;
+    }
+    .organic-tab button {
+        padding: 0px !important;
+    }
+    .tabcontent {
+        padding: 0px !important;
+    }
+ }
+
+footer {
+    margin:25px;
+    color:purple;
+    font-size: 20px;
+}
+
+.organic-mainmenu {
+    background-color: #363636;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+.organic-mainmenu a {
+    color: skyblue;
+}
+
+.organic-tab {
+    overflow: hidden;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4e4e4ea1;
+}
+
+.organic-tab button {
+    color:white;
+    background-color: inherit;
+    font-family: "ocrbmedium";
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 30px;
+    transition: 100ms;
+    border-radius: 10px;
+}
+
+.organic-tab button.active {
+    background-color: rgb(75, 75, 75);
+}
+
+.tabcontent {
+    display:none;
+    padding: 25px;
+}
+
+.organic-gameicon img{
+    margin: 20px;
+    transition: 100ms;
+    overflow:hidden;
+}
+
+.organic-gameicon.left img:hover {
+    transform: rotate(-2deg) scale(1.1,1.1);
+}
+
+.organic-gameicon.right img:hover {
+    transform: rotate(2deg) scale(1.1,1.1);
+}
+
+.organic-contact {
+    text-align: center;
+}
+
+.organic-contact h4 {
+    margin:10px;
+}
+
+.organic-contact input[type=text],input[type=email]{
+    font-family: "ocrbmedium";
+    font-size: 20px;
+    padding: 10px;
+    margin:5px;
+    width:50%
+}
+
+.organic-contact input[type=submit] {
+    font-size: 30px;
+    font-family: "ocrbmedium";
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.organic-contact input[type=submit]:active {
+    font-size: 30px;
+    font-family: "ocrbmedium";
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.organic-contact textarea {
+    font-family: "ocrbmedium";
+    font-size: 20px;
+    padding: 10px;
+    resize: vertical;
+    width:80%;
+}
