@@ -39,12 +39,21 @@ footer {
 }
 
 .organic-mainmenu {
-    background-color: #363636;
     border-radius: 25px;
     margin: 50px;
-    padding: 25px;
     color: white;
     font-size: 25px;
+    position: relative;
+}
+
+.organic-bgimage {
+    background-image: url("/assets/store.jpg");
+    background-size:cover;
+    background-position: center;
+    filter: blur(10px) brightness(50%);
+    -webkit-filter: blur(10px) brightness(50%);
+    position: absolute;
+    z-index: -1;
 }
 
 .organic-mainmenu a {
