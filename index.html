@@ -82,10 +82,6 @@
           }
           document.getElementById(tab).style.display = "block";
           evt.currentTarget.className += " active";
-
-          if(getUrlParam("contact","false")=="true"){
-              window.location.replace("/");
-          }
         }
 
         tablinks = document.getElementsByClassName("tablinks");
