@@ -21,9 +21,9 @@
     <img id="mainlogo" src="assets/logos/og_light1.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
     <div class="organic-mainmenu">
         <div class="organic-tab">
-            <button class="tablinks" onclick="switchTab(event, 'Games')">Games</button>
-            <button class="tablinks" onclick="switchTab(event, 'Contact')">Contact</button>
-            <button class="tablinks" onclick="switchTab(event, 'About')">About</button>
+            <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">Games</button>
+            <button class="tablinks" id="tab_contact" onclick="switchTab(event, 'Contact')">Contact</button>
+            <button class="tablinks" id="tab_about" onclick="switchTab(event, 'About')">About</button>
         </div>
         <div class="organic-bgimage" style="width:100%;height:80%;"></div>
         <div class="tabcontent" id="Games" style="display: block !important;">
@@ -82,10 +82,38 @@
           }
           document.getElementById(tab).style.display = "block";
           evt.currentTarget.className += " active";
+
+          if(getUrlParam("contact","false")=="true"){
+              window.location.replace("/");
+          }
         }
 
         tablinks = document.getElementsByClassName("tablinks");
         tablinks[0].className = "tablinks active";
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        function getUrlParam(parameter, defaultvalue){
+            var urlparameter = defaultvalue;
+            if(window.location.href.indexOf(parameter) > -1){
+                urlparameter = getUrlVars()[parameter];
+                }
+            return urlparameter;
+        }
+
+        var contact = getUrlParam("contact","false");
+        if(contact=="true"){
+            document.getElementById("Games").style.display = "none";
+            document.getElementById("Contact").style.display = "block";
+            document.getElementById("tab_contact").className = "tablinks active";
+            document.getElementById("tab_games").className = "tablinks";
+        }
 
     </script>
 </body>

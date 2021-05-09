@@ -50,8 +50,8 @@ footer {
     background-image: url("/assets/store.jpg");
     background-size:cover;
     background-position: center;
-    filter: blur(10px) brightness(50%);
-    -webkit-filter: blur(10px) brightness(50%);
+    filter: blur(10px) brightness(30%);
+    -webkit-filter: blur(10px) brightness(30%);
     position: absolute;
     z-index: -1;
 }
