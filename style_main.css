@@ -7,6 +7,15 @@
 
 }
 
+@font-face {
+    font-family: 'bm_germara12';
+    src: url('/assets/fonts/g/bmgermar-webfont.woff2') format('woff2'),
+         url('/assets/fonts/g/bmgermar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @media (max-width: 1000px) {  
     .organic-mainmenu {
         margin: 0px !important;
