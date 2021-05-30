@@ -40,7 +40,12 @@
         padding: 0px !important;
     }
  }
-
+header{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
 footer {
     margin:25px;
     color:purple;
