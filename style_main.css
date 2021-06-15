@@ -39,7 +39,11 @@
     .tabcontent {
         padding: 0px !important;
     }
+    #subtitle {
+        display: none;
+    }
  }
+
 header{
     text-align: left;
     color: white;
@@ -50,6 +54,18 @@ footer {
     margin:25px;
     color:purple;
     font-size: 20px;
+}
+
+#subtitle {
+    color: yellow;
+    background-color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    transform: rotate(5deg);
+    width: 15%;
+    margin-left: 20%;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .organic-mainmenu {

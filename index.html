@@ -19,6 +19,22 @@
         }
     </style>
     <img id="mainlogo" src="assets/logos/og_light1.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
+    <h1 id="subtitle"></h1>
+    <script>
+        var subtitles=[
+        "FRESH!",
+        "STERILIZED!",
+        "DELICIOUS!",
+        "PASTEURIZED!",
+        "FINELY AGED!",
+        "NO ARTIFICIAL FLAVORS!",
+        "1% JUICE!",
+        "ZERO SUGAR!",
+        "PULP FREE!"
+        ];
+        var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+        document.getElementById("subtitle").innerHTML = insert;
+    </script>
     <div class="organic-mainmenu">
         <div class="organic-tab">
             <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">Games</button>
