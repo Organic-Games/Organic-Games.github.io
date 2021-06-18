@@ -54,6 +54,40 @@ footer {
     margin:25px;
     color:purple;
     font-size: 20px;
+    display: block;
+}
+footer ul img{
+    filter: invert(25%);
+    width: 15%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+footer ul li:hover img{
+    filter: invert(50%);
+    width: 15%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+footer ul h1{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(63, 63, 63);
+    font-variant: small-caps;
+}
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+footer ul a:link, footer ul a:visited {
+    text-decoration: none;
+    color:purple;
+}
+footer ul a:hover{
+    color: rgb(189, 0, 189);
 }
 
 #subtitle {
