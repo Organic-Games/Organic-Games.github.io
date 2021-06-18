@@ -152,6 +152,13 @@ footer ul a:hover{
     padding: 25px;
 }
 
+#About h2 {
+    font-variant:
+    small-caps;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
 .organic-gameicon img{
     margin: 20px;
     transition: 100ms;
