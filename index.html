@@ -21,6 +21,7 @@
     <img id="mainlogo" src="assets/logos/og_light1.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
     <h1 id="subtitle"></h1>
     <script>
+        //Subtitles
         var subtitles=[
         "FRESH!",
         "STERILIZED!",
@@ -34,6 +35,15 @@
         ];
         var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
         document.getElementById("subtitle").innerHTML = insert;
+
+
+        //Contact form
+        function send_contact(){
+            var subject = document.getElementById("subject").value;
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
+        }
     </script>
     <div class="organic-mainmenu">
         <div class="organic-tab">
@@ -52,20 +62,16 @@
             </div>
         </div>
         <div class="tabcontent" id="Contact">
-            <h1>Contact</h1>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdSYqhs2VjZ06vckLLsxWp5Rh8ZbcAEEQImYGqFFzKLDG7SQ/viewform?embedded=true" width="640" height="828" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <!--
             <div class="organic-contact">
-                <form action="" method="post">
-                    <h4>Name:</h4><input type="text" name="name" placeholder="Name" required="" id="textinput"><br><br>
-                    <h4>Email:</h4><input type="email" name="email" placeholder="Email" required="" id="textinput"><br><br><br>
-                    <h4>Message:</h4>
-                    <textarea name="message" required="" id="textinput"> </textarea><br>
-                    <input type="submit" name="submit" value="Submit">
-                    <div class="clear"> </div>
+                <h1 style="text-align: center;">Contact</h1>
+                <form onsubmit="return: false;">
+                    <h4 style="float: left;">Subject:</h4><input type="text" name="subject" placeholder="Subject" id="subject" required><br><br>
+                    <h4 style="float: left;">Name:</h4><input type="text" name="name" placeholder="Name" id="name" required><br><br>
+                    <h4 style="float: left;">Message:</h4>
+                    <textarea name="body" id="message" placeholder="Message" required></textarea><br>
                 </form>
+                <div style="text-align: center;"><button onclick="send_contact()">Submit</button></div>
             </div>
-            -->
         </div>
         <div class="tabcontent" id="About">
             <!--It's me, <a href="https://chasepeck.com">Chase Peck</a>. I make games, if you couldn't tell.<br><br>-->

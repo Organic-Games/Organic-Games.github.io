@@ -130,6 +130,7 @@ footer ul li:hover a{
     -webkit-filter: blur(10px) brightness(30%);
     position: absolute;
     z-index: -1;
+    padding: 20px;
 }
 
 .organic-mainmenu a {
@@ -185,11 +186,19 @@ footer ul li:hover a{
 }
 
 .organic-contact {
-    text-align: center;
+    text-align: left;
+    background-color: rgba(34, 0, 34, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .organic-contact h4 {
     margin:10px;
+}
+
+.organic-contact input, textarea{
+    background-color: rgba(34, 0, 34,0.5);
+    color: white;
 }
 
 .organic-contact input[type=text],input[type=email]{
@@ -197,20 +206,20 @@ footer ul li:hover a{
     font-size: 20px;
     padding: 10px;
     margin:5px;
-    width:50%
+    width:50%;
 }
 
-.organic-contact input[type=submit] {
+.organic-contact button {
     font-size: 30px;
     font-family: "ocrbmedium";
-    background-color: black;
+    background-color: rgb(34, 0, 34);
     color: white;
     padding: 12px 20px;
     border: 1px solid white;
     cursor: pointer;
     margin-top: 25px;
 }
-.organic-contact input[type=submit]:active {
+.organic-contact button:active {
     font-size: 30px;
     font-family: "ocrbmedium";
     background-color: white;
