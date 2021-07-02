@@ -8,6 +8,15 @@
 }
 
 @font-face {
+    font-family: 'comicoromedium';
+    src: url('/assets/fonts/comicoro-webfont.woff2') format('woff2'),
+         url('/assets/fonts/comicoro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'bm_germara12';
     src: url('/assets/fonts/g/bmgermar-webfont.woff2') format('woff2'),
          url('/assets/fonts/g/bmgermar-webfont.woff') format('woff');
@@ -58,8 +67,29 @@ header{
     text-align: left;
     color: white;
     font-size: 30px;
-    margin-bottom: 25px;
+    background-color: rgb(66, 0, 66);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px;
+    margin-bottom: 50px;
+    display: block;
 }
+
+header img{
+    height: 25%; 
+    width: 25%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+header h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+    font-size: 40px;
+    font-family: "comicoromedium";
+}
+
 footer {
     margin:25px;
     color:purple;
@@ -252,4 +282,62 @@ footer ul li:hover a{
     vertical-align: top;
     text-align: center;
     list-style-type: none;
+}
+
+.organic-blogpost {
+    background-color: rgb(34, 0, 34);
+    padding: 20px;
+    box-shadow: 5px 8px 5px black;
+    border-radius: 10px;
+    width: 40%;
+    margin: 10px;
+    transition: 100ms;
+    vertical-align: middle;
+}
+
+.organic-blogpost a{
+    text-decoration: none;
+    color: white;
+}
+
+.organic-blogpost:hover {
+    background-color: rgb(51, 0, 51);
+    transition: 100ms;
+}
+
+.organic-blogpost h1 {
+    font-size: 35px;
+    font-variant: small-caps;
+    margin:0px;
+    margin-top:10px;
+    color: white;
+}
+
+.organic-blogpost h2 {
+    font-size: 20px;
+    font-variant: small-caps;
+    color: white;
+}
+
+.organic-blogpost img {
+    width: 50%;
+    height: auto;
+    margin: 0px;
+}
+
+.organic-blogpage {
+    text-align: left;
+    color:white;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.organic-blogpage #blogcontent, .organic-blogpage #blogcontent * {
+    font-family: "comicoromedium";
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.organic-blogpage a{
+    color: lightblue;
 }
