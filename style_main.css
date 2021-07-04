@@ -194,6 +194,10 @@ footer ul li:hover a{
     padding: 25px;
 }
 
+.tabcontent a {
+    text-decoration: none;
+}
+
 #About h2 {
     font-variant:
     small-caps;
