@@ -64,6 +64,14 @@
     #About img {
         width: 100% !important;
     }
+    #organic-games-production {
+        width: 80% !important;
+    }
+ }
+ @media (max-width: 1500px) {
+    #gamepage-main {
+		margin: 50px 0px !important;
+	}
  }
 
 header{
