@@ -384,3 +384,17 @@ footer ul li:hover a{
 .organic-blogpage a{
     color: lightblue;
 }
+
+.organic-buy-game img {
+    filter: invert(50%);
+    width: 30px;
+    margin-right: 10px;
+    transition: filter 100ms;
+}
+
+.organic-buy-game img:hover {
+    filter: invert(100%);
+    width: 30px;
+    margin-right: 10px;
+    transition: filter 100ms;
+}
