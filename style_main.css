@@ -67,11 +67,61 @@
     #organic-games-production {
         width: 80% !important;
     }
+    .organic-buy-game #main-div {
+        display: none;
+    }
+    .organic-buy-game #humble-large {
+        display: none;
+    }
+    .organic-buy-game #humble-small {
+        display: block;
+    }
+    .organic-blogpost {
+        width: 70% !important;
+    }
+    #info {
+        width: 50% !important;
+    }
  }
  @media (max-width: 1500px) {
     #gamepage-main {
 		margin: 50px 0px !important;
 	}
+ }
+ @media (max-width: 700px) {
+    #gamepage-main {
+		margin: 0px 0px !important;
+        padding: 0px !important;
+	}
+    .organic-buy-game #humble-small {
+        display: none;
+    }
+    #soundtrack {
+        display: none;
+    }
+    .organic-info-header {
+        padding: 10px !important;
+    }
+    #gamepage body {
+        padding: 0px !important;
+    }
+    #gametitle {
+        margin: 0px 0px !important;
+        width: 300px !important;
+    }
+    .organic-buy-game #more {
+        display: none;
+    }
+ }
+ @media (min-width: 1000px){
+    .organic-buy-game #humble-small {
+        display: none;
+    }
+ }
+ @media (min-width: 700px){
+    .organic-buy-game #small-div {
+        display: none;
+    }
  }
 
 header{
@@ -124,7 +174,6 @@ footer ul h1{
     margin: 0px;
     margin-bottom: 10px;
     font-size: 20px;
-    font-style: normal;
     color: rgb(63, 63, 63);
     font-variant: small-caps;
 }
@@ -385,16 +434,41 @@ footer ul li:hover a{
     color: lightblue;
 }
 
-.organic-buy-game img {
+.organic-buy-game #more {
     filter: invert(50%);
     width: 30px;
     margin-right: 10px;
     transition: filter 100ms;
 }
 
-.organic-buy-game img:hover {
+.organic-buy-game #more:hover {
     filter: invert(100%);
     width: 30px;
     margin-right: 10px;
     transition: filter 100ms;
+}
+
+.organic-buy-game #small {
+    background-color: rgb(179, 0, 0);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 40px;
+    box-shadow: 0px 5px 0px black;
+    top: 0px;
+    transition: 100ms;
+    position: relative;
+}
+
+.organic-buy-game #small:active {
+    top: 5px;
+    box-shadow: 0px 0px 0px black;
+}
+
+.organic-buy-game #small img{
+    filter: invert(100%);
+    width: 30px;
+    margin-right: 10px;
+    transition: filter 100ms;
+    vertical-align: middle;
 }
