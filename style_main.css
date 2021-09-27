@@ -137,10 +137,11 @@ header{
 }
 
 header img{
-    height: 10%; 
-    width: 10%;
+    height: 15%; 
+    width: 15%;
     vertical-align: middle;
     display: inline-block;
+    padding: 10px;
 }
 
 header h1{
@@ -152,10 +153,15 @@ header h1{
 }
 
 footer {
-    margin:25px;
     color:purple;
     font-size: 20px;
     display: block;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,0%);
+    padding-bottom: 30px;
 }
 footer ul img{
     filter: invert(25%);
@@ -230,12 +236,11 @@ footer ul li:hover a{
 .organic-tab {
     overflow: hidden;
     padding-bottom: 25px;
-    border-bottom: 1px solid #4e4e4ea1;
 }
 
 .organic-tab button {
     color:white;
-    background-color: inherit;
+    background-color: rgba(0,0,0,0.5);
     font-family: "ocrbmedium";
     border: none;
     text-decoration: underline;
@@ -293,8 +298,11 @@ footer ul li:hover a{
     text-shadow: 3px 3px 5px black;
 }
 
+.organic-gameicon{
+    text-decoration: none;
+}
+
 .organic-gameicon img{
-    margin: 20px;
     transition: 100ms;
     overflow:hidden;
 }

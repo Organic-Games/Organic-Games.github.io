@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="mainpage">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,38 +13,16 @@
 <body>
     <style>
         body{
-            background-color: #05000c;
+            background-color: black;
             text-align: center;
             font-family: "ocrbmedium";
+            background-image: url("/assets/og_smokestacks.png");
+            background-size: 100%;
+            background-position: bottom;
+            background-repeat: no-repeat;
         }
     </style>
-    <img id="mainlogo" src="assets/logos/og_light1.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
-    <h1 id="subtitle"></h1>
-    <script>
-        //Subtitles
-        var subtitles=[
-        "FRESH!",
-        "STERILIZED!",
-        "DELICIOUS!",
-        "PASTEURIZED!",
-        "FINELY AGED!",
-        "NO ARTIFICIAL FLAVORS!",
-        "1% JUICE!",
-        "ZERO SUGAR!",
-        "PULP FREE!"
-        ];
-        var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-        document.getElementById("subtitle").innerHTML = insert;
-
-
-        //Contact form
-        function send_contact(){
-            var subject = document.getElementById("subject").value;
-            var name = document.getElementById("name").value;
-            var message = document.getElementById("message").value;
-            window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
-        }
-    </script>
+    <img id="mainlogo" src="assets/logos/og_light.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;" alt="Organic Games">
     <div class="organic-mainmenu">
         <div class="organic-tab">
             <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">Games</button>
@@ -52,14 +30,11 @@
             <button class="tablinks" id="tab_contact" onclick="switchTab(event, 'Contact')">Contact</button>
             <button class="tablinks" id="tab_about" onclick="switchTab(event, 'About')">About</button>
         </div>
-        <div class="organic-bgimage" style="width:100%;height:80%;"></div>
         <div class="tabcontent" id="Games" style="display: block !important;">
-            <div style="display: inline-block;">
-                <figure class="organic-gameicon left">
-                    <a href="/games/dotdashdot/">
-                        <img src="games/dotdashdot/Thumbnail1.png" style="height: auto;width:30%;vertical-align: top;float:left;">
-                    </a>
-                </figure>
+            <div style="display: inline-block; text-align: center;">
+                <a href="/games/dotdashdot/"  class="organic-gameicon right">
+                    <img src="games/dotdashdot/Thumbnail1.png" style="height: auto;width:20%;vertical-align: top;">
+                </a>
             </div>
         </div>
         <div class="tabcontent" id="Blog">
@@ -150,9 +125,8 @@
         <ul>
             <h1>Info</h1>
             <li><a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a></li>
-        </ul>
-        <hr style="border: 1px solid rgb(26, 0, 26); margin: 50px">
-        2021 <i>Organic Games LLC</i><br><br>
+        </ul><br>
+        (c)2021 <i>Organic Games LLC</i><br><br>
     </footer>
     <script>
         function switchTab(evt, tab) {
