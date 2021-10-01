@@ -156,12 +156,11 @@ footer {
     color:purple;
     font-size: 20px;
     display: block;
-    background-color: rgba(0,0,0,0.8);
     width: 100%;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%,0%);
-    padding-bottom: 30px;
+}
+#mainpage footer {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
 }
 footer ul img{
     filter: invert(25%);
