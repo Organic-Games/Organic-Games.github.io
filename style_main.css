@@ -82,11 +82,23 @@
     #info {
         width: 50% !important;
     }
+    .organic-blogpage, .organic-privacy div {
+        padding: 0px !important;
+    }
+    .organic-blogpage header h1, .organic-privacy header h1 {
+        display: none !important;
+    }
+    .organic-blogpage header img, .organic-privacy header img {
+        width: 50% !important;
+    }
  }
  @media (max-width: 1500px) {
     #gamepage-main {
 		margin: 50px 0px !important;
 	}
+    footer {
+        margin-top: 10px !important;
+    }
  }
  @media (max-width: 700px) {
     #gamepage-main {
@@ -111,6 +123,12 @@
     }
     .organic-buy-game #more {
         display: none;
+    }
+    footer #optbreak {
+        display: block !important;
+    }
+    footer #copyright {
+        font-size: 15px !important;
     }
  }
  @media (min-width: 1000px){
