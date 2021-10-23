@@ -53,7 +53,7 @@
         width:70% !important;
     }
     .organic-tab button {
-        padding: 0px !important;
+        padding: 5px !important;
     }
     .tabcontent {
         padding: 0px !important;
@@ -79,10 +79,7 @@
     .organic-blogpost {
         width: 70% !important;
     }
-    #info {
-        width: 50% !important;
-    }
-    .organic-blogpage, .organic-privacy div {
+    .organic-blogpage div, .organic-privacy div {
         padding: 0px !important;
     }
     .organic-blogpage header h1, .organic-privacy header h1 {
@@ -165,9 +162,8 @@ header img{
 header h1{
     display: inline-block;
     vertical-align: middle;
-    font-style: italic;
-    font-size: 40px;
-    font-family: "comicoromedium";
+    font-size: 20px;
+    font-family: "Courier New";
 }
 
 footer {
@@ -258,7 +254,7 @@ footer ul li:hover a{
 .organic-tab button {
     color:white;
     background-color: rgba(0,0,0,0.5);
-    font-family: "ocrbmedium";
+    font-family: "Georgia";
     border: none;
     text-decoration: underline;
     cursor: pointer;
@@ -349,7 +345,7 @@ footer ul li:hover a{
 }
 
 .organic-contact input[type=text],input[type=email]{
-    font-family: "ocrbmedium";
+    font-family: "Georgia";
     font-size: 20px;
     padding: 10px;
     margin:5px;
@@ -358,7 +354,7 @@ footer ul li:hover a{
 
 .organic-contact button {
     font-size: 30px;
-    font-family: "ocrbmedium";
+    font-family: "Georgia";
     background-color: rgb(34, 0, 34);
     color: white;
     padding: 12px 20px;
@@ -368,7 +364,7 @@ footer ul li:hover a{
 }
 .organic-contact button:active {
     font-size: 30px;
-    font-family: "ocrbmedium";
+    font-family: "Georgia";
     background-color: white;
     color: black;
     padding: 12px 20px;
@@ -378,7 +374,7 @@ footer ul li:hover a{
 }
 
 .organic-contact textarea {
-    font-family: "ocrbmedium";
+    font-family: "Georgia";
     font-size: 20px;
     padding: 10px;
     resize: vertical;
@@ -424,7 +420,6 @@ footer ul li:hover a{
 
 .organic-blogpost h1 {
     font-size: 35px;
-    font-variant: small-caps;
     margin:0px;
     margin-top:10px;
     color: white;
@@ -432,7 +427,6 @@ footer ul li:hover a{
 
 .organic-blogpost h2 {
     font-size: 20px;
-    font-variant: small-caps;
     color: white;
 }
 
@@ -445,14 +439,17 @@ footer ul li:hover a{
 .organic-blogpage {
     text-align: left;
     color:white;
-    padding: 50px;
     font-size: 20px;
 }
 
+.organic-blogpage div, .organic-privacy div {
+    padding-left:100px;
+    padding-right:100px;
+}
+
 .organic-blogpage #blogcontent, .organic-blogpage #blogcontent * {
-    font-family: "comicoromedium";
-    font-size: 40px;
-    line-height: 25px;
+    font-family: "Georgia";
+    font-size: 20px;
 }
 
 .organic-blogpage a{
