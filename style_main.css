@@ -35,6 +35,17 @@
     100%{opacity: 1;}
 }
 
+@media (max-width: 1500px) {
+    #gamepage-main {
+        margin: 50px 0px !important;
+    }
+    footer {
+        margin-top: 10px !important;
+    }
+    #About img {
+        width: 100% !important;
+    }
+}
 @media (max-width: 1000px) {  
     .organic-mainmenu {
         margin: 0px !important;
@@ -61,9 +72,6 @@
     #subtitle {
         display: none;
     }
-    #About img {
-        width: 100% !important;
-    }
     #organic-games-production {
         width: 80% !important;
     }
@@ -88,16 +96,8 @@
     .organic-blogpage header img, .organic-privacy header img {
         width: 50% !important;
     }
- }
- @media (max-width: 1500px) {
-    #gamepage-main {
-		margin: 50px 0px !important;
-	}
-    footer {
-        margin-top: 10px !important;
-    }
- }
- @media (max-width: 700px) {
+}
+@media (max-width: 700px) {
     #gamepage-main {
 		margin: 0px 0px !important;
         padding: 0px !important;
@@ -121,23 +121,30 @@
     .organic-buy-game #more {
         display: none;
     }
-    footer #optbreak {
-        display: block !important;
-    }
     footer #copyright {
         font-size: 15px !important;
     }
- }
- @media (min-width: 1000px){
+    footer #footer-info {
+        display: none;
+    }
+    #About .organic-aboutlink {
+        padding: 10px !important;
+        width: 10% !important;
+    }
+    #About #info {
+        width: 90% !important;
+    }
+}
+@media (min-width: 1000px){
     .organic-buy-game #humble-small {
         display: none;
     }
- }
- @media (min-width: 700px){
+}
+@media (min-width: 700px){
     .organic-buy-game #small-div {
         display: none;
     }
- }
+}
 
 header{
     text-align: left;
@@ -276,11 +283,16 @@ footer ul li:hover a{
     text-decoration: none;
 }
 
+#About a {
+    color: white;
+    font-weight: bold;
+}
+
 #About h2 {
-    font-variant:
-    small-caps;
+    font-variant: small-caps;
     margin: 0px;
     margin-bottom: 5px;
+    text-shadow: 3px 3px 5px black;
 }
 
 #About img {
@@ -305,10 +317,6 @@ footer ul li:hover a{
 
 #About .organic-aboutlink:hover {
     background-color: rgb(119, 0, 119);
-}
-
-#About h2 {
-    text-shadow: 3px 3px 5px black;
 }
 
 .organic-gameicon{
