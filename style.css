@@ -25,15 +25,7 @@
 
 }
 
-@keyframes movein{
-    0%  {opacity: 0; right: 200px;}
-    100%{opacity: 1; right: 0px;}
-}
-
-@keyframes fadein{
-    0%  {opacity: 0;}
-    100%{opacity: 1;}
-}
+/* -------------- */
 
 @media (max-width: 1500px) {
     #gamepage-main {
@@ -46,6 +38,7 @@
         width: 100% !important;
     }
 }
+
 @media (max-width: 1000px) {  
     .organic-mainmenu {
         margin: 0px !important;
@@ -75,15 +68,6 @@
     #organic-games-production {
         width: 80% !important;
     }
-    .organic-buy-game #main-div {
-        display: none;
-    }
-    .organic-buy-game #humble-large {
-        display: none;
-    }
-    .organic-buy-game #humble-small {
-        display: block;
-    }
     .organic-blogpost {
         width: 70% !important;
     }
@@ -97,16 +81,20 @@
         width: 50% !important;
     }
 }
+
 @media (max-width: 700px) {
     #gamepage-main {
 		margin: 0px 0px !important;
         padding: 0px !important;
 	}
-    .organic-buy-game #humble-small {
-        display: none;
-    }
     #soundtrack {
         display: none;
+    }
+    .organic-buy-game a {
+        width: 90% !important;
+    }
+    .organic-buy-game #soundtrack {
+        display: inline-block !important;
     }
     .organic-info-header {
         padding: 10px !important;
@@ -117,9 +105,6 @@
     #gametitle {
         margin: 0px 0px !important;
         width: 300px !important;
-    }
-    .organic-buy-game #more {
-        display: none;
     }
     footer #copyright {
         font-size: 15px !important;
@@ -135,16 +120,8 @@
         width: 90% !important;
     }
 }
-@media (min-width: 1000px){
-    .organic-buy-game #humble-small {
-        display: none;
-    }
-}
-@media (min-width: 700px){
-    .organic-buy-game #small-div {
-        display: none;
-    }
-}
+
+/* -------------- */
 
 header{
     text-align: left;
@@ -173,16 +150,20 @@ header h1{
     font-family: "Courier New";
 }
 
+/* -------------- */
+
 footer {
     color:purple;
     font-size: 20px;
     display: block;
     width: 100%;
 }
+
 #mainpage footer {
     background-color: rgba(0,0,0,0.8);
     border-radius: 5px;
 }
+
 footer ul img{
     filter: invert(25%);
     width: 15%;
@@ -190,12 +171,14 @@ footer ul img{
     margin-right: 10px;
     transition: filter 100ms;
 }
+
 footer ul li:hover img{
     filter: invert(50%);
     width: 15%;
     vertical-align: middle;
     margin-right: 10px;
 }
+
 footer ul h1{
     margin: 0px;
     margin-bottom: 10px;
@@ -203,20 +186,25 @@ footer ul h1{
     color: rgb(63, 63, 63);
     font-variant: small-caps;
 }
+
 footer ul {
     text-align: left;
     list-style-type: none;
     display: inline-block;
     vertical-align: top;
 }
+
 footer ul a:link, footer ul a:visited {
     text-decoration: none;
     color:purple;
     transition: color 100ms;
 }
+
 footer ul li:hover a{
     color: rgb(189, 0, 189);
 }
+
+/* -------------- */
 
 #subtitle {
     color: yellow;
@@ -238,6 +226,10 @@ footer ul li:hover a{
     position: relative;
 }
 
+.organic-mainmenu a {
+    color: skyblue;
+}
+
 .organic-bgimage {
     background-image: url("/assets/store.jpg");
     background-size:cover;
@@ -249,9 +241,7 @@ footer ul li:hover a{
     padding: 20px;
 }
 
-.organic-mainmenu a {
-    color: skyblue;
-}
+/* -------------- */
 
 .organic-tab {
     overflow: hidden;
@@ -278,6 +268,8 @@ footer ul li:hover a{
     display:none;
     padding: 25px;
 }
+
+/* -------------- */
 
 #Blog a {
     text-decoration: none;
@@ -319,6 +311,8 @@ footer ul li:hover a{
     background-color: rgb(119, 0, 119);
 }
 
+/* -------------- */
+
 .organic-gameicon{
     text-decoration: none;
 }
@@ -335,6 +329,8 @@ footer ul li:hover a{
 .organic-gameicon.right img:hover {
     transform: rotate(2deg) scale(1.1,1.1);
 }
+
+/* -------------- */
 
 .organic-contact {
     text-align: left;
@@ -389,21 +385,7 @@ footer ul li:hover a{
     width:80%;
 }
 
-.organic-info-header {
-    text-align: left;
-    padding: 50px;
-    margin: 30px;
-    border-radius: 10px;
-    font-size: 25px;
-    display: block;
-}
-
-.organic-info-header ul {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    list-style-type: none;
-}
+/* -------------- */
 
 .organic-blogpost {
     background-color: rgb(34, 0, 34);
@@ -464,21 +446,25 @@ footer ul li:hover a{
     color: lightblue;
 }
 
-.organic-buy-game #more {
-    filter: invert(50%);
-    width: 30px;
-    margin-right: 10px;
-    transition: filter 100ms;
+/* -------------- */
+
+.organic-info-header {
+    text-align: left;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    display: block;
 }
 
-.organic-buy-game #more:hover {
-    filter: invert(100%);
-    width: 30px;
-    margin-right: 10px;
-    transition: filter 100ms;
+.organic-info-header ul {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    list-style-type: none;
 }
 
-.organic-buy-game #small {
+.organic-buy-game a {
     background-color: rgb(179, 0, 0);
     padding: 10px;
     color: white;
@@ -488,17 +474,34 @@ footer ul li:hover a{
     top: 0px;
     transition: 100ms;
     position: relative;
+    display: inline-block;
+    width: 350px;
+    margin-bottom: -50px;
 }
 
-.organic-buy-game #small:active {
+.organic-buy-game a:hover {
+    background-color: rgb(255, 100, 100) !important;
+}
+
+.organic-buy-game a:active {
     top: 5px;
     box-shadow: 0px 0px 0px black;
 }
 
-.organic-buy-game #small img{
+.organic-buy-game a img{
     filter: invert(100%);
     width: 30px;
     margin-right: 10px;
     transition: filter 100ms;
     vertical-align: middle;
+}
+
+.organic-buy-game #mobile {
+    background-color: rgb(230, 80, 0);
+}
+
+.organic-buy-game #soundtrack {
+    display: none;
+    margin-bottom: 0px;
+    background-color: rgb(255, 0, 119);
 }
