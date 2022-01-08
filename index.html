@@ -76,7 +76,7 @@
                     <h4 style="float: left;">Message:</h4>
                     <textarea name="body" id="message" placeholder="Message" required></textarea><br>
                 </form>
-                <div style="text-align: center;"><button onclick="send_contact()">Submit</button></div>
+                <div style="text-align: center;"><button onclick="sendContact()">Submit</button></div>
             </div>
         </div>
         <div class="tabcontent" id="About">
@@ -169,6 +169,13 @@
             document.getElementById("tab_contact").className = "tablinks active";
             document.getElementById("tab_games").className = "tablinks";
         }
+
+        function sendContact(){
+             var subject = document.getElementById("subject").value;
+             var name = document.getElementById("name").value;
+             var message = document.getElementById("message").value;
+             window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
+         }
 
     </script>
 </body>
