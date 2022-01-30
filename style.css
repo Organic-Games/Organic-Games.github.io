@@ -275,9 +275,10 @@ footer ul li:hover a{
     text-decoration: none;
 }
 
-#About a {
-    color: white;
-    font-weight: bold;
+#About {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #About h2 {
@@ -334,7 +335,7 @@ footer ul li:hover a{
 
 .organic-contact {
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
