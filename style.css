@@ -262,15 +262,30 @@ footer ul li:hover a{
     font-size: 25px;
 }
 
-.organic-bgimage {
-    background-image: url("/assets/store.jpg");
-    background-size:cover;
-    background-position: center;
-    filter: blur(10px) brightness(30%);
-    -webkit-filter: blur(10px) brightness(30%);
-    position: absolute;
-    z-index: -1;
-    padding: 20px;
+/* -------------- */
+
+.organic-button {
+    transition: 100ms;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 8px 5px black;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+
+.organic-button:hover {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 15px 18px 5px black;
+    right: 10px;
+    bottom: 10px;
+}
+
+.organic-button:active {
+    background-color: rgb(50, 50, 50);
+    box-shadow: 4px 7px 5px black;
+    right: -3px;
+    bottom: -3px;
 }
 
 /* -------------- */
@@ -337,53 +352,30 @@ footer ul li:hover a{
 
 #About .organic-aboutlink {
     background-color: black;
-    border: 2px solid white;
     width: 5%;
-    border-radius: 10px;
     padding: 20px;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 50px;
-    box-shadow: 5px 8px 5px black;
-    transition: 100ms;
-    right: 0px;
-    bottom: 0px;
-    position: relative;
 }
 
 #About .organic-aboutlink:hover {
     background-color: rgb(20, 20, 20);
-    box-shadow: 15px 18px 5px black;
-    right: 10px;
-    bottom: 10px;
 }
 
 #About .organic-aboutlink:active {
-    right: -1px;
-    bottom: -1px;
     background-color: rgb(50, 50, 50);
-    box-shadow: 4px 7px 5px black;
 }
 
 /* -------------- */
 
-.organic-gameicon{
+.organic-gameicon {
     text-decoration: none;
 }
 
-.organic-gameicon img{
-    transition: 100ms;
-    box-shadow: 10px 10px 20px black;
-    overflow: hidden;
-}
-
-.organic-gameicon.left img:hover {
-    transform: rotate(-2deg) scale(1.1,1.1);
-}
-
-.organic-gameicon.right img:hover {
-    transform: rotate(2deg) scale(1.1,1.1);
+.organic-gameicon img {
+    border: none !important;
 }
 
 /* -------------- */
@@ -422,7 +414,6 @@ footer ul li:hover a{
     color: white;
     padding: 12px 40px;
     border: 2px solid white;
-    border-radius: 10px;
     cursor: pointer;
     margin-top: 25px;
 }
@@ -443,36 +434,15 @@ footer ul li:hover a{
 
 .organic-blogpost {
     background-color: black;
-    border: 2px solid white;
     padding: 20px;
-    box-shadow: 5px 8px 5px black;
-    border-radius: 10px;
     width: 40%;
     margin: 10px;
     vertical-align: middle;
-    transition: 100ms;
-    position: relative;
-    right: 0px;
-    bottom: 0px;
 }
 
 .organic-blogpost a{
     text-decoration: none;
     color: white;
-}
-
-.organic-blogpost:hover {
-    background-color: rgb(20, 20, 20);
-    box-shadow: 15px 18px 5px black;
-    right: 10px;
-    bottom: 10px;
-}
-
-.organic-blogpost:active {
-    right: -1px;
-    bottom: -1px;
-    background-color: rgb(50, 50, 50);
-    box-shadow: 4px 7px 5px black;
 }
 
 .organic-blogpost h1 {
