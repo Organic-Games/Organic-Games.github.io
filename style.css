@@ -329,11 +329,18 @@ footer ul li:hover a{
     border-radius: 10px;
 }
 
+#About p {
+    text-align: justify;
+    text-indent: 20pt;
+    padding: 0px 10%;
+}
+
 #About h2 {
     font-variant: small-caps;
     margin: 0px;
     margin-bottom: 5px;
     text-shadow: 3px 3px 5px black;
+    margin-top: 50px;
 }
 
 #About img {
@@ -350,7 +357,6 @@ footer ul li:hover a{
     text-align: center;
     vertical-align: middle;
     display: inline-block;
-    margin-bottom: 50px;
 }
 
 #About .organic-aboutlink:hover {
