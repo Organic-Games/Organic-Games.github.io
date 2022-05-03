@@ -56,9 +56,6 @@
         transform: none !important;
         width:70% !important;
     }
-    .organic-tab button {
-        padding: 5px !important;
-    }
     .tabcontent {
         padding: 0px !important;
     }
@@ -74,11 +71,18 @@
     .organic-blogpage div, .organic-privacy div {
         padding: 0px !important;
     }
+    .organic-blogpage header, .organic-privacy header {
+        text-align: center !important;
+        margin-bottom: 25px !important;
+    }
     .organic-blogpage header h1, .organic-privacy header h1 {
         display: none !important;
     }
     .organic-blogpage header img, .organic-privacy header img {
         width: 50% !important;
+    }
+    .organic-contact form {
+        padding: 0px !important;
     }
 }
 
@@ -123,19 +127,33 @@
 
 /* -------------- */
 
-header{
-    text-align: left;
+body {
+    background-color: black;
     color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Georgia";
+}
+
+a {
+    color: skyblue;
+}
+
+a:active {
+    color: red;
+}
+
+/* -------------- */
+
+header {
     font-size: 30px;
-    background-color: rgb(66, 0, 66);
     padding-left: 20px;
     border-radius: 10px;
-    margin: 0px;
     margin-bottom: 50px;
     display: block;
 }
 
-header img{
+header img {
     height: 15%; 
     width: 15%;
     vertical-align: middle;
@@ -143,25 +161,42 @@ header img{
     padding: 10px;
 }
 
-header h1{
+header h1 {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-    font-family: "Courier New";
+    font-family: "ocrbmedium";
+    font-weight: normal;
 }
 
 /* -------------- */
 
 footer {
-    color:purple;
+    color: var(--footer-color);
     font-size: 20px;
-    display: block;
     width: 100%;
 }
 
 #mainpage footer {
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 5px;
+    background-color: black;
+}
+
+footer #organic-logo-mask {
+    mask-image: url("/assets/logos/og_banner2dark.png");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: var(--footer-color);
+    text-align: center;
+}
+
+footer #organic-logo-mask img {
+    width: 10%;
+    opacity: 0%;
+}
+
+footer a:link p, footer a:visited p {
+    color: var(--footer-color);
 }
 
 footer ul img{
@@ -185,6 +220,7 @@ footer ul h1{
     font-size: 20px;
     color: rgb(63, 63, 63);
     font-variant: small-caps;
+    font-family: "ocrbmedium";
 }
 
 footer ul {
@@ -196,12 +232,15 @@ footer ul {
 
 footer ul a:link, footer ul a:visited {
     text-decoration: none;
-    color:purple;
+    color: gray;
     transition: color 100ms;
+    font-family: "ocrbmedium";
+    letter-spacing: -2.5px;
+    font-variant: small-caps;
 }
 
 footer ul li:hover a{
-    color: rgb(189, 0, 189);
+    color: white;
 }
 
 /* -------------- */
@@ -219,15 +258,8 @@ footer ul li:hover a{
 }
 
 .organic-mainmenu {
-    border-radius: 25px;
     margin: 50px;
-    color: white;
     font-size: 25px;
-    position: relative;
-}
-
-.organic-mainmenu a {
-    color: skyblue;
 }
 
 .organic-bgimage {
@@ -249,15 +281,21 @@ footer ul li:hover a{
 }
 
 .organic-tab button {
-    color:white;
+    color: white;
     background-color: rgba(0,0,0,0.5);
-    font-family: "Georgia";
-    border: none;
+    font-family: "ocrbmedium";
+    letter-spacing: -2px;
     text-decoration: underline;
+    border: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 30px;
+    padding: 10px;
+    width: 20%;
+    font-size: 20px;
     border-radius: 10px;
+}
+
+.organic-tab button:active {
+    background-color: rgb(100, 100, 100);
 }
 
 .organic-tab button.active {
@@ -265,8 +303,11 @@ footer ul li:hover a{
 }
 
 .tabcontent {
-    display:none;
-    padding: 25px;
+    display: none;
+}
+
+.tabcontent div {
+    padding: 20px;
 }
 
 /* -------------- */
@@ -277,7 +318,6 @@ footer ul li:hover a{
 
 #About {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
     border-radius: 10px;
 }
 
@@ -296,7 +336,8 @@ footer ul li:hover a{
 }
 
 #About .organic-aboutlink {
-    background-color: rgb(75, 0, 75);
+    background-color: black;
+    border: 2px solid white;
     width: 5%;
     border-radius: 10px;
     padding: 20px;
@@ -304,12 +345,25 @@ footer ul li:hover a{
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 50px;
-    transition: 100ms;
     box-shadow: 5px 8px 5px black;
+    transition: 100ms;
+    right: 0px;
+    bottom: 0px;
+    position: relative;
 }
 
 #About .organic-aboutlink:hover {
-    background-color: rgb(119, 0, 119);
+    background-color: rgb(20, 20, 20);
+    box-shadow: 15px 18px 5px black;
+    right: 10px;
+    bottom: 10px;
+}
+
+#About .organic-aboutlink:active {
+    right: -1px;
+    bottom: -1px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 4px 7px 5px black;
 }
 
 /* -------------- */
@@ -336,7 +390,6 @@ footer ul li:hover a{
 .organic-contact {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
     border-radius: 10px;
 }
 
@@ -344,61 +397,62 @@ footer ul li:hover a{
     margin:10px;
 }
 
+.organic-contact form {
+    padding: 0px 10%;
+}
+
 .organic-contact input, textarea{
-    background-color: rgba(34, 0, 34, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid black;
     color: white;
 }
 
 .organic-contact input[type=text],input[type=email]{
-    font-family: "Georgia";
     font-size: 20px;
     padding: 10px;
-    margin:5px;
-    width:50%;
+    margin: 5px;
+    width: 50%;
 }
 
 .organic-contact button {
-    font-size: 30px;
-    font-family: "Georgia";
-    background-color: rgb(34, 0, 34);
+    font-size: 25px;
+    font-family: "ocrbmedium";
+    background-color: black;
     color: white;
-    padding: 12px 20px;
-    border: 2px solid black;
+    padding: 12px 40px;
+    border: 2px solid white;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 25px;
 }
+
 .organic-contact button:active {
-    font-size: 30px;
-    font-family: "Georgia";
     background-color: white;
     color: black;
-    padding: 12px 20px;
-    border: 1px solid white;
-    cursor: pointer;
-    margin-top: 25px;
 }
 
 .organic-contact textarea {
-    font-family: "Georgia";
     font-size: 20px;
     padding: 10px;
     resize: vertical;
-    width:80%;
+    width: 80%;
 }
 
 /* -------------- */
 
 .organic-blogpost {
-    background-color: rgb(34, 0, 34);
+    background-color: black;
+    border: 2px solid white;
     padding: 20px;
     box-shadow: 5px 8px 5px black;
     border-radius: 10px;
     width: 40%;
     margin: 10px;
-    transition: 100ms;
     vertical-align: middle;
+    transition: 100ms;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
 }
 
 .organic-blogpost a{
@@ -407,15 +461,26 @@ footer ul li:hover a{
 }
 
 .organic-blogpost:hover {
-    background-color: rgb(51, 0, 51);
-    transition: 100ms;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 15px 18px 5px black;
+    right: 10px;
+    bottom: 10px;
+}
+
+.organic-blogpost:active {
+    right: -1px;
+    bottom: -1px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 4px 7px 5px black;
 }
 
 .organic-blogpost h1 {
-    font-size: 35px;
-    margin:0px;
-    margin-top:10px;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 10px;
     color: white;
+    font-family: "ocrbmedium";
+    letter-spacing: -5px;
 }
 
 .organic-blogpost h2 {
@@ -436,17 +501,8 @@ footer ul li:hover a{
 }
 
 .organic-blogpage div, .organic-privacy div {
-    padding-left:100px;
-    padding-right:100px;
-}
-
-.organic-blogpage #blogcontent, .organic-blogpage #blogcontent * {
-    font-family: "Georgia";
-    font-size: 20px;
-}
-
-.organic-blogpage a{
-    color: lightblue;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /* -------------- */

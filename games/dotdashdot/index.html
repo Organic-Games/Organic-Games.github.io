@@ -12,7 +12,10 @@
 </head>
 <body>
     <style>
-        body{
+        html {
+            --footer-color: rgb(90, 155, 255);
+        }
+        body {
             background-color: rgb(0,0,10);
             background-image: url("lighthouse.gif");
             background-position: bottom;
@@ -20,7 +23,7 @@
             background-size: contain;
             text-align: center;
             font-family: "Georgia";
-            padding:50px;
+            padding: 50px;
         }
     </style>
     <a href="/"><img src="/games/dotdashdot/Title_wSub.png" style="width: 50%; margin-bottom: 50px;" id="gametitle"></a><br>
@@ -61,8 +64,10 @@
     </div>
 
     <footer>
-        <a href="/"><img id="organic-games-production" style="width:30%; height: auto; margin-bottom: 20px;" src="/assets/logos/og_banner2purple.png"></a><br>
-        <a href="/" style="color:purple; text-decoration: none;">©2022 <i>Organic Games LLC</i></a>
+        <a href="/" style="text-decoration: none;">
+            <div id="organic-logo-mask"><img src="/assets/white4px.png"></div>
+            <p id="copyright">©2022 <i>Organic Games LLC</i></p>
+        </a>
     </footer>
 </body>
 </html>
