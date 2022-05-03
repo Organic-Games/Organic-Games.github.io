@@ -18,12 +18,12 @@
         }
         body {
             text-align: center;
-            font-family: "Georgia";
             background-image: url("/assets/tile.png");
             background-repeat: repeat;
         }
     </style>
-    <img id="mainlogo" src="assets/logos/og_light.png" style="width:50%;height:auto;margin:25px;transform: rotate(-2deg);transition: 100ms;box-shadow: 10px 10px 30px black;" alt="Organic Games">
+    <header id="subtitle"></header>
+    <img id="mainlogo" src="assets/logos/og_light.png" style="width:50%;height:auto;margin:0px 10px 25px 10px;transform: rotate(-2deg);transition: 100ms;box-shadow: 10px 10px 30px black;" alt="Organic Games">
     <div class="organic-mainmenu">
         <div class="organic-tab">
             <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">GAMES</button>
@@ -156,6 +156,23 @@
             window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
         }
 
+
+
+
+        var subtitles;
+        var request = new XMLHttpRequest;
+        request.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                subtitles = JSON.parse(this.responseText);
+                console.log(subtitles);
+                var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+                //var insert = subtitles[subtitles.length-1];
+                document.getElementById("subtitle").innerHTML = insert.toUpperCase();
+            }
+        }
+        request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
+        request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
+        request.send();
     </script>
 </body>
 </html>
