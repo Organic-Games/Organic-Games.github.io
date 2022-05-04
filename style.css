@@ -301,6 +301,11 @@ footer ul li:hover a{
     width: 20%;
     font-size: 20px;
     border-radius: 10px;
+    transition: 25ms;
+}
+
+.organic-tab button:hover {
+    background-color: rgb(50, 50, 50);
 }
 
 .organic-tab button:active {
