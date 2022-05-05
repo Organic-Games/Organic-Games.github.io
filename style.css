@@ -34,7 +34,7 @@
     footer {
         margin-top: 10px !important;
     }
-    #About img {
+    #About #aboutlinks img {
         width: 100% !important;
     }
 }
@@ -81,6 +81,9 @@
     .organic-contact form {
         padding: 0px !important;
     }
+    #About img {
+        width: 60% !important;
+    }
 }
 
 @media (max-width: 700px) {
@@ -122,7 +125,7 @@
     }
     .organic-tab button {
         padding: 10px 0px !important;
-        font-size: 45% !important;
+        font-size: 70% !important;
     }
     .organic-mainmenu {
         font-size: 20px !important;
@@ -362,7 +365,7 @@ footer ul li:hover a{
     margin-top: 50px;
 }
 
-#About img {
+#About #aboutlinks img {
     filter: invert(100%);
     width: 50%;
     vertical-align: middle;
