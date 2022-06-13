@@ -212,9 +212,8 @@ footer #organic-logo-mask {
     text-align: center;
 }
 
-footer #organic-logo-mask img {
-    width: 10%;
-    opacity: 0%;
+footer img {
+    width: 30%;
 }
 
 footer a:link p, footer a:visited p {
