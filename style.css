@@ -156,6 +156,28 @@ a:active {
     color: red;
 }
 
+ul li {
+    text-align: left;
+}
+
+/* -------------- */
+
+button {
+    font-size: 25px;
+    font-family: "ocrbmedium";
+    background-color: black;
+    color: white;
+    padding: 12px 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button:active {
+    background-color: white !important;
+    color: black;
+}
+
 /* -------------- */
 
 header {
@@ -266,6 +288,15 @@ footer ul li:hover a{
 
 /* -------------- */
 
+#mainlogo {
+    width: 70%;
+    height: auto;
+    margin: 5px 0px;
+    transition: 100ms;
+    transform: rotate(-0.5deg);
+    /*sbox-shadow: 10px 10px 10px black;*/
+}
+
 .organic-mainmenu {
     margin: 10px;
     font-size: 25px;
@@ -350,7 +381,7 @@ footer ul li:hover a{
     border-radius: 10px;
 }
 
-#About p {
+#About p, #gamepage-main p {
     text-align: justify;
     text-indent: 20pt;
     padding: 0px 10%;
@@ -396,6 +427,9 @@ footer ul li:hover a{
 
 .organic-gameicon img {
     border: none !important;
+    height: auto;
+    width:30%;
+    vertical-align: top;
 }
 
 /* -------------- */
@@ -406,8 +440,13 @@ footer ul li:hover a{
     border-radius: 10px;
 }
 
+.organic-contact h1 {
+    text-align: center;
+}
+
 .organic-contact h4 {
-    margin:10px;
+    margin: 10px;
+    float: left;
 }
 
 .organic-contact form {
@@ -427,22 +466,6 @@ footer ul li:hover a{
     width: 50%;
 }
 
-.organic-contact button {
-    font-size: 25px;
-    font-family: "ocrbmedium";
-    background-color: black;
-    color: white;
-    padding: 12px 40px;
-    border: 2px solid white;
-    cursor: pointer;
-    margin-top: 25px;
-}
-
-.organic-contact button:active {
-    background-color: white;
-    color: black;
-}
-
 .organic-contact textarea {
     font-size: 20px;
     padding: 10px;
@@ -458,6 +481,7 @@ footer ul li:hover a{
     width: 40%;
     margin: 10px;
     vertical-align: middle;
+    display: inline-block;
 }
 
 .organic-blogpost a{
@@ -520,6 +544,17 @@ footer ul li:hover a{
 }
 
 /* -------------- */
+
+#gametitle {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#gamepage-main {
+    margin: 50px 200px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 2px; border-radius: 10px;
+}
 
 .organic-info-header {
     text-align: left;
