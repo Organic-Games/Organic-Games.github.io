@@ -162,7 +162,7 @@ header {
     font-size: 30px;
     padding-left: 20px;
     border-radius: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     display: block;
 }
 
@@ -268,7 +268,7 @@ footer ul li:hover a{
 /* -------------- */
 
 .organic-mainmenu {
-    margin: 50px;
+    margin: 10px;
     font-size: 25px;
 }
 
@@ -302,7 +302,7 @@ footer ul li:hover a{
 
 .organic-tab {
     overflow: hidden;
-    padding-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .organic-tab button {
