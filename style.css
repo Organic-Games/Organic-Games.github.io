@@ -355,7 +355,7 @@ footer ul li:hover a{
 }
 
 .organic-tab button:active {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100) !important;
 }
 
 .organic-tab button.active {
