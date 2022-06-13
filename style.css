@@ -204,7 +204,7 @@ footer {
 }
 
 footer #organic-logo-mask {
-    mask-image: url("/assets/logos/og_banner2dark.png");
+    mask-image: url("/assets/logos/banner2dark.png");
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
