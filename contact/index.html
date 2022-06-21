@@ -12,34 +12,12 @@
 </head>
 <body>
     <style>
-        body{
-            background-color: #05000c;
-            text-align: center;
-            font-family: "Georgia";
+        body {
+            background-color: black;
         }
     </style>
     <script>
-        //Contact form
-        function send_contact(){
-            var subject = document.getElementById("subject").value;
-            var name = document.getElementById("name").value;
-            var message = document.getElementById("message").value;
-            window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
-        }
+        window.location.href = "/?contact=true"
     </script>
-    <header>
-        <a href="/"><img src="/assets/logos/bannerlight.png"></a>
-        <h1>/contact</h1>
-    </header>
-    <div class="organic-contact" style="color: white; position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%); width: 90%;">
-        <h1 style="text-align: center;">Contact</h1>
-        <form onsubmit="return false;">
-            <h4 style="float: left;">Subject:</h4><input type="text" name="subject" placeholder="Subject" id="subject" required><br><br>
-            <h4 style="float: left;">Name:</h4><input type="text" name="name" placeholder="Name" id="name" required><br><br>
-            <h4 style="float: left;">Message:</h4>
-            <textarea name="body" id="message" placeholder="Message" required></textarea><br>
-        </form>
-        <div style="text-align: center;"><button onclick="send_contact()">Submit</button></div>
-    </div>
 </body>
 </html>
