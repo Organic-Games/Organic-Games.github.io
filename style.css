@@ -133,12 +133,17 @@
 
 /* -------------- */
 
+html {
+    --font: "ocrbmedium", monospace;
+    --alt-font: "Georgia", serif;
+}
+
 body {
     background-color: black;
     color: white;
     text-align: left;
     font-size: 20px;
-    font-family: "Georgia";
+    font-family: var(--alt-font);
 }
 
 a {
@@ -157,7 +162,7 @@ ul li {
 
 button {
     font-size: 25px;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     background-color: black;
     color: white;
     padding: 12px 40px;
@@ -183,7 +188,7 @@ header {
 
 #mainpage header {
     background-color: black;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     padding: 10px;
     font-size: 15px;
     letter-spacing: 5px;
@@ -202,7 +207,7 @@ header h1 {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     font-weight: normal;
 }
 
@@ -256,7 +261,7 @@ footer ul h1{
     font-size: 20px;
     color: rgb(63, 63, 63);
     font-variant: small-caps;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
 }
 
 footer ul {
@@ -270,7 +275,7 @@ footer ul a:link, footer ul a:visited {
     text-decoration: none;
     color: gray;
     transition: color 100ms;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     letter-spacing: -2.5px;
     font-variant: small-caps;
 }
@@ -331,7 +336,7 @@ footer ul li:hover a{
 .organic-tab button {
     color: white;
     background-color: rgba(0,0,0,0.5);
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     letter-spacing: -2px;
     text-decoration: underline;
     border: none;
@@ -487,7 +492,7 @@ footer ul li:hover a{
     margin: 0px;
     margin-top: 10px;
     color: white;
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     letter-spacing: -5px;
 }
 
@@ -518,7 +523,7 @@ footer ul li:hover a{
 }
 
 .organic-blogpage div h1 {
-    font-family: "ocrbmedium";
+    font-family: var(--font);
     letter-spacing: -5px;
 }
 
