@@ -150,7 +150,7 @@
     }
     .organic-tab button {
         padding: 10px 0px !important;
-        font-size: 70% !important;
+        font-size: 85% !important;
     }
     .organic-mainmenu {
         font-size: 20px !important;
@@ -213,7 +213,6 @@ button:active {
 header {
     font-size: 30px;
     padding-left: 20px;
-    border-radius: 10px;
     margin-bottom: 5px;
     display: block;
 }
@@ -223,8 +222,6 @@ header {
     font-family: var(--font);
     padding: 10px;
     font-size: 15px;
-    letter-spacing: 5px;
-    border-radius: 0px;
 }
 
 header img {
@@ -253,15 +250,6 @@ footer {
 
 #mainpage footer {
     background-color: black;
-}
-
-footer #organic-logo-mask {
-    mask-image: url("/assets/logos/banner2dark.png");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-    background-color: var(--footer-color);
-    text-align: center;
 }
 
 footer img {
@@ -346,7 +334,7 @@ footer ul li:hover a{
 
 .organic-button:hover {
     background-color: rgb(20, 20, 20);
-    box-shadow: 15px 18px 5px black;
+    box-shadow: 15px 18px 25px black;
     right: 10px;
     bottom: 10px;
 }

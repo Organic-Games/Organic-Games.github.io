@@ -19,19 +19,19 @@
         }
         body {
             text-align: center;
-            background-image: url("/assets/bgrects.png");
-            background-size: 100% auto;
+            background-image: url("/assets/tile.png");
         }
     </style>
-    <header></header>
-    <img id="mainlogo" src="assets/logos/logo_dotdashdot.png" alt="Organic Games">
-    <div class="organic-mainmenu">
+    <header>
+        <img id="mainlogo" src="assets/logos/logo_dotdashdot.png" alt="Organic Games">
         <div class="organic-tab">
             <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">GAMES</button>
             <button class="tablinks" id="tab_blog" onclick="switchTab(event, 'Blog')">BLOG</button>
             <button class="tablinks" id="tab_contact" onclick="switchTab(event, 'Contact')">CONTACT</button>
             <button class="tablinks" id="tab_about" onclick="switchTab(event, 'About')">ABOUT</button>
         </div>
+    </header>
+    <div class="organic-mainmenu">
         <div class="tabcontent" id="Games" style="display: block !important;">
             <div style="display: inline-block; text-align: center;">
                 <a href="/games/dotdashdot/"  class="organic-gameicon">
