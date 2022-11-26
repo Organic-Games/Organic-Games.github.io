@@ -1,21 +1,53 @@
 @font-face {
-    font-family: 'ocrbmedium';
-    src: url('assets/fonts/ocrb_medium-webfont.woff2') format('woff2'),
-         url('assets/fonts/ocrb_medium-webfont.woff') format('woff');
+    font-family: "source_serif_pro";
+    src: url("assets/fonts/source_serif_pro/SourceSerifPro-Regular.woff2") format("woff2"),
+         url("assets/fonts/source_serif_pro/SourceSerifPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: "source_serif_pro";
+    src: url("assets/fonts/source_serif_pro/SourceSerifPro-Bold.woff2") format("woff2"),
+         url("assets/fonts/source_serif_pro/SourceSerifPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source_serif_pro";
+    src: url("assets/fonts/source_serif_pro/SourceSerifPro-Italic.woff2") format("woff2"),
+         url("assets/fonts/source_serif_pro/SourceSerifPro-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "source_serif_pro";
+    src: url("assets/fonts/source_serif_pro/SourceSerifPro-BoldItalic.woff2") format("woff2"),
+         url("assets/fonts/source_serif_pro/SourceSerifPro-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* -------------- */
 
 @font-face {
-    font-family: 'bm_germara12';
-    src: url('/assets/fonts/g/bmgermar-webfont.woff2') format('woff2'),
-         url('/assets/fonts/g/bmgermar-webfont.woff') format('woff');
+    font-family: "ocrbmedium";
+    src: url("assets/fonts/ocrb/ocrb_medium.woff2") format("woff2"),
+         url("assets/fonts/ocrb/ocrb_medium.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
 
+/* -------------- */
+
+@font-face {
+    font-family: "bm_germara12";
+    src: url("/assets/fonts/g/bmgermar/bmgermar.woff2") format("woff2"),
+         url("/assets/fonts/g/bmgermar/bmgermar.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* -------------- */
@@ -135,7 +167,7 @@
 
 html {
     --font: "ocrbmedium", monospace;
-    --alt-font: "Georgia", serif;
+    --alt-font: "source_serif_pro", serif;
 }
 
 body {
