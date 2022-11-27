@@ -1,4 +1,4 @@
-# Organic-Games.github.io
+# organic.games
 Delectable video entertainment!<br>
 https://organic.games
 
