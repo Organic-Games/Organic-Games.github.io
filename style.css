@@ -33,7 +33,7 @@
 /* -------------- */
 
 @font-face {
-    font-family: "ocrbmedium";
+    font-family: "ocrb";
     src: url("assets/fonts/ocrb/ocrb_medium.woff2") format("woff2"),
          url("assets/fonts/ocrb/ocrb_medium.woff") format("woff");
     font-weight: normal;
@@ -93,11 +93,14 @@
     .organic-blogpage div, .organic-privacy div {
         padding: 10px !important;
     }
+    .organic-blogpage div h1, .organic-blogpage div h2 {
+        text-align: center !important;
+    }
     .organic-blogpage header, .organic-privacy header {
         text-align: center !important;
         margin-bottom: 25px !important;
     }
-    .organic-blogpage header h1, .organic-privacy header h1 {
+    .organic-blogpage header h1, .organic-privacy header h1, .organic-blogpage div h2 i {
         display: none !important;
     }
     .organic-blogpage header img, .organic-privacy header img {
@@ -116,13 +119,13 @@
 		margin: 0px 0px !important;
         padding: 0px !important;
 	}
-    #soundtrack {
-        display: none;
+    #ost {
+        display: none !important;
     }
     .organic-buy-game a {
         width: 90% !important;
     }
-    .organic-buy-game #soundtrack {
+    .organic-buy-game #ost {
         display: inline-block !important;
     }
     .organic-info-header {
@@ -139,7 +142,7 @@
         font-size: 15px !important;
     }
     footer #footer-info {
-        display: none;
+        display: none !important;
     }
     #About .organic-aboutlink {
         padding: 10px !important;
@@ -166,7 +169,7 @@
 /* -------------- */
 
 html {
-    --font: "ocrbmedium", monospace;
+    --font: "ocrb", monospace;
     --alt-font: "source_serif_pro", serif;
 }
 
@@ -502,7 +505,7 @@ footer ul li:hover a{
     display: inline-block;
 }
 
-.organic-blogpost a{
+.organic-blogpost a {
     text-decoration: none;
     color: white;
 }
@@ -517,13 +520,16 @@ footer ul li:hover a{
 }
 
 .organic-blogpost h2 {
+    font-family: var(--font);
     font-size: 20px;
-    color: white;
+    color: red;
+    letter-spacing: 10px;
 }
 
-.organic-blogpost h2 i {
+.organic-blogpost h2 i, .organic-blogpage div h2 i {
     font-size: 15px;
     color: gray;
+    letter-spacing: 0px;
 }
 
 .organic-blogpost img {
@@ -534,7 +540,7 @@ footer ul li:hover a{
 
 .organic-blogpage {
     text-align: left;
-    color:white;
+    color: white;
     font-size: 20px;
 }
 
@@ -547,9 +553,10 @@ footer ul li:hover a{
     letter-spacing: -5px;
 }
 
-.organic-blogpage div h2 i {
-    font-size: 15px;
-    color: gray;
+.organic-blogpage div h2 {
+    color: red;
+    font-family: var(--font);
+    letter-spacing: 10px
 }
 
 .organic-blogpage div p {
@@ -626,7 +633,7 @@ footer ul li:hover a{
     background-color: rgb(230, 80, 0);
 }
 
-.organic-buy-game #soundtrack {
+.organic-buy-game #ost {
     display: none;
     margin-bottom: 0px;
     background-color: rgb(255, 0, 119);
