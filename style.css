@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.game-icon {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.game-icon a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.game-icon .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.game-icon .overlay img {
+  vertical-align: bottom;
+  display: inline;
+  width: 10%;
+  height: auto;
+  color: white;
+  padding: 3px;
+  filter: invert(100%);
+}
+
+.game-icon .overlay, .game-icon .overlay * {
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.game-icon:hover .overlay, .game-icon:hover .overlay * {
+  opacity: 1;
+}
