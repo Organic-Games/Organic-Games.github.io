@@ -6,6 +6,15 @@
 
 /* -------------------- */
 
+@font-face {
+    font-family: "bm_germara12";
+    src:
+      url("/games/dotdashdot/bmgermar.woff2") format("woff2"),
+      url("/games/dotdashdot/bmgermar.woff") format("woff");
+}
+
+/* -------------------- */
+
 :root {
   --main-color: white;
   --main-bg-color: black;
@@ -20,8 +29,6 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-color);
   padding: 50px;
-  text-align: center;
-  font-family: "handwritten", sans-serif;
 }
 
 a {
@@ -32,11 +39,25 @@ a {
 #title {
   width: 90%;
   margin-bottom: 50px;
+  max-width: 1000px;
 }
 
 .home {
+  text-align: center;
+  font-family: "handwritten", sans-serif;
   white-space: nowrap;
   overflow: auto;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer img {
+  width: 250px;
+  width: 25%;
+  min-width: 200px;
 }
 
 /* -------------------- */
@@ -123,4 +144,53 @@ a {
 .journal-icon img {
   width: 50%;
   height: auto;
+}
+
+/* -------------------- */
+
+.download-info {
+  margin: 0px 50px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.download-info a {
+  background-color: var(--main-bg-color);
+  transition: 100ms ease-out;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2.5rem;
+  display: inline-block;
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 5px;
+}
+
+.download-info p {
+  font-size: 2rem;
+}
+
+.download-info a:hover {
+  background-color: var(--main-color) !important;
+  color: var(--main-bg-color) !important;
+}
+
+.download-info #desktop {
+  border: 2px darkred solid;
+}
+
+.download-info #mobile {
+  border: 2px orangered solid;
+}
+
+.download-info #soundtrack {
+  border: 2px deeppink solid;
+}
+
+@media (max-width: 700px) {
+  #humblewidget {
+    margin-left: -100px;
+  }
 }
