@@ -13,6 +13,12 @@
       url("/games/dotdashdot/bmgermar.woff") format("woff");
 }
 
+@font-face {
+    font-family: "typewriter_condensed";
+    src:
+      url("/games/dotdashdot/type.ttf");
+}
+
 /* -------------------- */
 
 :root {
@@ -159,6 +165,7 @@ footer img {
   margin: 0px 50px 50px 50px;
   padding: 50px;
   border-radius: 10px;
+  font-size: 1.5rem;
 }
 
 .description-box p {
