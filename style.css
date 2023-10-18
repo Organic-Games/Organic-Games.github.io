@@ -55,10 +55,10 @@ footer {
 }
 
 footer img {
-  width: 250px;
   width: 25%;
   min-width: 200px;
 }
+
 
 /* -------------------- */
 
@@ -90,6 +90,8 @@ footer img {
   text-align: center;
   border-radius: 10px;
   white-space: normal;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .game-icon .overlay b {
@@ -124,6 +126,7 @@ footer img {
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0px 0px var(--main-color);
+  overflow: hidden;
 }
 
 .journal-icon:hover {
@@ -153,6 +156,7 @@ footer img {
   padding: 50px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
+  min-width: 500px;
 }
 
 .download-info a {
@@ -189,8 +193,20 @@ footer img {
   border: 2px deeppink solid;
 }
 
-@media (max-width: 700px) {
+/* -------------------- */
+
+@media (max-width: 500px) {
+  body {
+    padding: 0px !important;
+  }
+
   #humblewidget {
-    margin-left: -100px;
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .download-info {
+    margin: 0px !important;
   }
 }
