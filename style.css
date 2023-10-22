@@ -100,15 +100,38 @@ footer img {
   max-width: 1000px;
 }
 
-.home {
+#home {
   text-align: center;
   font-family: "handwritten", sans-serif;
   white-space: nowrap;
   overflow: auto;
 }
 
-.home footer a:hover {
+#home footer a:hover {
   color: red;
+}
+
+#about {
+  padding: 50px;
+  font-family: "besley";
+  font-size: 1.25rem;
+}
+
+#about hr {
+  border: 1px var(--sub1-color) solid;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 25px 0px;
+}
+
+#about img {
+  width: 40%;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 /* -------------------- */
