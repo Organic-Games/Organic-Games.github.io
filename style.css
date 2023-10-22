@@ -35,7 +35,7 @@
 /* -------------------- */
 
 :root {
-  --main-color: white;
+  --main-color: lightyellow;
   --main-bg-color: black;
   --sub1-color: gray;
 }
@@ -64,6 +64,16 @@ a {
   color: var(--main-color);
 }
 
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer img {
+  width: 25%;
+  min-width: 200px;
+}
+
 #title {
   text-align: center;
 }
@@ -81,16 +91,9 @@ a {
   overflow: auto;
 }
 
-footer {
-  margin-top: 50px;
-  text-align: center;
+.home footer a:hover {
+  color: red;
 }
-
-footer img {
-  width: 25%;
-  min-width: 200px;
-}
-
 
 /* -------------------- */
 
