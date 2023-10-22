@@ -4,6 +4,19 @@
     url("/assets/fonts/handwritten.ttf");
 }
 
+@font-face {
+  font-family: "besley";
+  src:
+    url("/assets/fonts/besley.ttf");
+}
+
+@font-face {
+  font-family: "besley";
+  src:
+    url("/assets/fonts/besley_italic.ttf");
+  font-style: italic;
+}
+
 /* -------------------- */
 
 @font-face {
@@ -35,6 +48,15 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-color);
   padding: 50px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p + p {
+  text-indent: 20pt;
 }
 
 a {
@@ -125,6 +147,48 @@ footer img {
 
 /* -------------------- */
 
+.journal {
+  margin: 0px 15%;
+}
+
+.journal h1 {
+  font-family: "handwritten";
+  font-size: 3rem;
+  font-weight: normal;
+  font-variant: small-caps;
+  letter-spacing: 5px;
+}
+
+.journal h1 a:hover {
+  color: red;
+}
+
+.journal h2 {
+  color: var(--sub1-color);
+  font-family: "handwritten";
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+.journal hr {
+  border: 2px var(--sub1-color) dashed;
+}
+
+.journal p {
+  font-family: "besley";
+  font-size: 1.25rem;
+}
+
+.journal p a {
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.journal p a:active {
+  color: red;
+}
+
 .journal-icon {
   font-size: 1.25rem;
   background-color: var(--main-bg-color);
@@ -168,15 +232,6 @@ footer img {
   font-size: 1.5rem;
 }
 
-.description-box p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.description-box p + p {
-  text-indent: 20pt;
-}
-
 .download-info {
   margin: 0px 50px;
   padding: 50px;
@@ -201,6 +256,7 @@ footer img {
 
 .download-info p {
   font-size: 2rem;
+  text-align: center;
 }
 
 .download-info a:hover {
@@ -233,7 +289,7 @@ footer img {
 }
 
 @media (max-width: 700px) {
-  .download-info {
+  .journal, .download-info {
     margin: 0px !important;
   }
 }
