@@ -4,16 +4,32 @@
     url("/assets/fonts/handwritten.ttf");
 }
 
+/* Besley */
 @font-face {
   font-family: "besley";
   src:
-    url("/assets/fonts/besley.ttf");
+    url("/assets/fonts/besley_regular.ttf");
+}
+
+@font-face {
+  font-family: "besley";
+  src:
+    url("/assets/fonts/besley_black.ttf");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "besley";
   src:
     url("/assets/fonts/besley_italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "besley";
+  src:
+    url("/assets/fonts/besley_blackitalic.ttf");
+  font-weight: bold;
   font-style: italic;
 }
 
