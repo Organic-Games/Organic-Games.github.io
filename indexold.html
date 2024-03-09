@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" id="mainpage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Games, LLC. - freshly picked video games, created by Chase Peck">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logos/small_notext.png">
+    <link rel="apple-touch-icon" href="assets/logos/small_notext.png">
+    <title>Organic Games</title>
+</head>
+<body>
+    <style>
+        html {
+            background-color: black;
+            --footer-color: gray;
+        }
+        body {
+            text-align: center;
+            background-image: url("/assets/tile.png");
+        }
+    </style>
+    <header>
+        <img id="mainlogo" src="assets/logos/logo_dotdashdot.png" alt="Organic Games">
+        <div class="organic-tab">
+            <button class="tablinks" id="tab_games" onclick="switchTab(event, 'Games')">GAMES</button>
+            <button class="tablinks" id="tab_blog" onclick="switchTab(event, 'Blog')">BLOG</button>
+            <button class="tablinks" id="tab_contact" onclick="switchTab(event, 'Contact')">CONTACT</button>
+            <button class="tablinks" id="tab_about" onclick="switchTab(event, 'About')">ABOUT</button>
+        </div>
+    </header>
+    <div class="organic-mainmenu">
+        <div class="tabcontent" id="Games" style="display: block !important;">
+            <div style="display: inline-block; text-align: center;">
+                <a href="/games/dotdashdot/"  class="organic-gameicon">
+                    <img class="organic-button" src="games/dotdashdot/Thumbnail1.png">
+                </a>
+            </div>
+        </div>
+        <div class="tabcontent" id="Blog">
+            <a href="/blog/6-23-21">
+                <div class="organic-button organic-blogpost">
+                        <h1>Dot Dash Dot is released!</h1>
+                        <h2>6/23/21</h2>
+                        <img src="/blog/6-23-21/6-23-21.png">
+                </div>
+            </a>
+        </div>
+        <div class="tabcontent" id="Contact">
+            <div class="organic-contact">
+                <h1>Contact</h1>
+                <form onsubmit="return false;">
+                    <h4>Subject:</h4><input type="text" name="subject" placeholder="Subject" id="subject" required><br><br>
+                    <h4>Name:</h4><input type="text" name="name" placeholder="Name" id="name" required><br><br>
+                    <h4>Message:</h4>
+                    <textarea name="body" id="message" placeholder="Message" required></textarea><br>
+                </form>
+                <div style="text-align: center;"><button onclick="sendContact()" class="organic-button">SUBMIT</button></div>
+            </div>
+        </div>
+        <div class="tabcontent" id="About">
+            <div>
+                <img src="/assets/organic-product.png" style="width: 25%;"><br>
+                <a href="https://www.chasepeck.com">Organic Games is just one underaged indie developer</a>, delivering piping-hot computer games straight from the software oven!
+            </div>
+            <div id="aboutlinks">
+                <h2 style="margin-top: 10px;">Play</h2>
+                <div style="font-size: 30px;font-style: italic;">
+                <a href="https://store.steampowered.com/developer/organicgames"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/steam.svg"></div></a>
+                <a href="https://gamejolt.com/@OrganicGames"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/gamejolt.svg"></div></a>
+                <a href="https://organic-games.itch.io" target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/itchdotio.svg"></div></a>
+                <a href="https://apps.apple.com/us/developer/organic-games/id1566780389" target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/apple.svg"></div></a>
+                <a href="https://play.google.com/store/apps/dev?id=5085614605879964209"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/googleplay.svg"></div></a>
+                </div>
+                <h2>Social</h2>
+                <a href="https://twitter.com/_OrganicGames"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/twitter.svg"></div></a>
+                <a href="https://www.facebook.com/OrganicGamesLLC/"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/facebook.svg"></div></a>
+                <a href="https://www.youtube.com/@Organic_Games"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/youtube.svg"></div></a>
+                <a href="https://github.com/Organic-Games"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/github.svg"></div></a>
+                <a href="https://organicgames.bandcamp.com"target="_blank" rel="noopener noreferrer"><div class="organic-button organic-aboutlink"><img src="https://simpleicons.org/icons/bandcamp.svg"></div></a>
+                <h2>Info</h2>
+                <a href="/privacy-policy/"><div class="organic-button organic-aboutlink" style="width: 15%;" id="info">Privacy<br></div></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <h1>Play</h1>
+            <li><a href="https://store.steampowered.com/developer/organicgames" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/steam.svg">Steam</a></li>
+            <li><a href="https://gamejolt.com/@OrganicGames" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/gamejolt.svg">GameJolt</a></li>
+            <li><a href="https://organic-games.itch.io" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/itchdotio.svg">Itch.io</a></li>
+            <li><a href="https://apps.apple.com/us/developer/organic-games/id1566780389" target="_blank" rel="noopener noreferrer" style="font-size: 18px;"><img src="https://simpleicons.org/icons/apple.svg">App Store</a></li>
+            <li><a href="https://play.google.com/store/apps/dev?id=5085614605879964209" target="_blank" rel="noopener noreferrer" style="font-size: 15px;"><img src="https://simpleicons.org/icons/googleplay.svg">Google Play</a></li>
+        </ul>
+        <ul>
+            <h1>Social</h1>
+            <li><a href="https://twitter.com/_OrganicGames" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/twitter.svg">Twitter</a></li>
+            <li><a href="https://www.facebook.com/OrganicGamesLLC/" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/facebook.svg">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@Organic_Games" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/youtube.svg">YouTube</a></li>
+            <li><a href="https://github.com/Organic-Games" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/github.svg">GitHub</a></li>
+            <li><a href="https://organicgames.bandcamp.com" target="_blank" rel="noopener noreferrer"><img src="https://simpleicons.org/icons/bandcamp.svg">Bandcamp</a></li>
+        </ul>
+        <ul id="footer-info">
+            <h1>Info</h1>
+            <li><a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+        </ul><br>
+        <p id="copyright">©2023 <i>Organic Games LLC</i><br><br></p>
+    </footer>
+    <script>
+        function switchTab(evt, tab) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tab).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        tablinks[0].className = "tablinks active";
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        function getUrlParam(parameter, defaultvalue){
+            var urlparameter = defaultvalue;
+            if(window.location.href.indexOf(parameter) > -1)
+                urlparameter = getUrlVars()[parameter];
+            return urlparameter;
+        }
+
+        var contact = getUrlParam("contact","false");
+        if(contact == "true"){
+            document.getElementById("Games").style.display = "none";
+            document.getElementById("Contact").style.display = "block";
+            document.getElementById("tab_contact").className = "tablinks active";
+            document.getElementById("tab_games").className = "tablinks";
+        }
+
+        function sendContact(){
+            var subject = document.getElementById("subject").value;
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            window.location.href = "mailto:info@organic.games?subject="+subject+"&body="+message+"%0AFrom "+name;
+        }
+    </script>
+</body>
+</html>
